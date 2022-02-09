@@ -1,0 +1,386 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Georgia, serif;
+
+}
+
+/* Start navbar */
+.nav
+{
+    background-color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* right: 0; */
+    width: 100%;
+    z-index: 99999;
+}
+#btn
+{
+    float: left;
+    padding: 10px 20px ;
+    text-decoration-line: none;
+    color: #000000;
+    letter-spacing: 5px;
+}
+.title
+{
+    font-size: 16px;
+    float: right;
+    padding: 10px 20px ;
+    text-decoration-line: none;
+    color: #000000;
+    letter-spacing: 5px;
+}
+.nav a:hover
+{
+     background-color: #ccc!important;
+     
+}
+.clearfix
+{
+    clear: both;
+}
+
+                     /* Media Query of Navbar */
+
+                     @media all and (max-width:650px){
+
+                        .title{
+                            display: none;
+                            background-color: tomato;
+                        }
+                     }
+/* End navbar */
+
+/* Start Header */
+.head
+{
+    background-image:url(../images/hamburger.jpg) ;
+    background-size: 100% 100%;
+    height: 100vh;
+    position: relative;
+}
+h1{
+    
+    font-family: "Playfair Display";
+    color: #000000;
+    opacity: 0.5;
+    letter-spacing: 5px;
+    position: absolute;
+    left: 20px;
+    bottom: 0px ;
+    margin-bottom: 20px;
+}
+
+                        /* Media Query of Header */
+
+                        @media all and (max-width:1000px){
+                            .head{
+                                height: 80vh;
+                            }    
+                            h1{
+                                font-size: 20px;
+                            }                
+                           
+                        }
+                        @media all and (max-width:650px){
+                            .head{
+                                height: 60vh;
+                            }                    
+                            h1{
+                                font-size: 16px;
+                            }   
+                        }
+/* End Header */
+
+/* Start About Section */
+.container
+{
+    margin-top: 50px;
+    margin: 70px;
+}
+.about-img
+{
+    width: 50%;
+    float: left;
+    opacity: 0.7;
+    padding-left: 30px;
+}
+.about-img img
+{
+    width: 90%;
+}
+.about-content
+{
+    width: 50%;
+    float: right;
+}
+.about-content h2
+{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 300;
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+    color: #000000;
+    margin: 20px 0px ;
+}
+
+.about-content h3
+{
+    text-align: center;
+    margin: 50px 0px 20px 0px ;
+    font-weight:100 ;
+    font-size: 16px ;
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+    color: #000000;
+}
+.about-content p
+{
+
+    letter-spacing: 1px;
+    margin: 0px 50px 20px 0px ;
+    line-height: 1.7;
+}
+.about-content mark
+{
+    background-color: #F1F1F1;
+    padding: 5px 10px;
+    
+}
+.about-content span
+{
+    color: #757575;
+    letter-spacing: 1px;
+    line-height: 1.7;
+}
+
+                    /* Media Query of About Section */
+
+                    @media all and (max-width:1200px){
+                        .about-img img
+                            {
+                                width: 100%;
+                            }
+                            .about-content{
+                               padding-left: 50px;
+                            }
+                            .about-content h2
+                        {
+                           
+                            font-size: 20px;
+                            margin: 5px 0px ;
+                        }
+
+                        .about-content h3
+                        {
+                            font-size: 10px ;
+                            margin: 20px 0px 10px 0px ;
+                        }
+                        .about-content p
+                        {
+                            margin: 0px 10px 10px 0px ;
+                        }
+                        
+                        .about-content span
+                        {
+                            display: none;
+                        }
+                    }
+
+                    @media all and (max-width:600px){
+                        .about-img
+                        {
+                            width: 100%;
+                    }
+                    .about-content
+                        {
+                            width: 100%;
+                            margin-top: 20px;
+
+                        }
+                        .about-content span
+                        {
+                            display:block;
+                        }
+                    }
+/* End About Section */
+hr
+{
+    opacity: 0.2;
+    margin: 0px 100px;
+
+}
+/* Start Menu Section */
+.menu-img
+{
+    width: 50%;
+    float: right;
+    opacity: 0.7;
+    padding-left: 30px;
+ padding-right: 20px;
+}
+.menu-img img
+{
+    width: 90%;
+}
+.menu-content
+{
+    width: 50%;
+    float: left;
+}
+.menu-content h2
+{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 300;
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+    color: #000000;
+    margin: 30px 0px ;
+}
+.menu-heading
+{ 
+    padding-top: 20px;
+    margin-left: 30px;
+}
+.menu-heading h5
+{
+    margin: 50px 0px 20px 0px ;
+    font-size: 18px ;
+    font-weight: 200;
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+    color: #000000;
+}
+.menu-heading p
+{
+    color: #757575;
+    letter-spacing: 1px;
+    font-size: 14px;
+    
+}
+                        /* Media Query of Menu Section */
+                        @media all and (max-width:1200px){
+                            .menu-content
+                            {
+                                padding: 40px;
+                                width: 40%;
+                            }
+                            .menu-content h2
+                                {
+                                   
+                                    font-size: 30px;
+                                    margin: 10px 0px ;
+                                }
+                                .menu-heading
+                                { 
+                                    padding-top: 10px;
+                                    margin-left: 30px;
+                                }
+                                .menu-heading h5
+                                {
+                                    margin: 20px 0px 10px 0px ;
+                                    font-size: 15px ;
+                                }
+                                .menu-heading p
+                                {
+                                    font-size: 12px;
+                                    
+                                }
+                                .menu-img img
+                                {
+                                    width: 100%;
+                                }
+                        }
+
+                        @media all and (max-width:700px){
+                            .menu-img 
+                                {
+                                    width: 100%;
+                                }
+                                .menu-content
+                            {
+                            
+                                width: 100%;
+                            }
+                        }
+/* End Menu Section */
+
+/* Start Contcat Section   */
+.contact-intro
+{
+    margin-bottom: 10px;
+}
+.contact-intro h4
+{
+    margin: 30px 0px;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-weight: 100px;
+}
+.contact-intro p 
+{
+    padding: 30px 0px;
+    line-height: 1.5;
+}
+.contact-intro span
+{
+    color: #607d8b;
+    font-size: 18px;
+}
+.contact-form input
+{
+    margin: 20px 0px;
+    /* background-color: #fff; */
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 95%;
+    font-size: 16px;
+    padding: 8px;
+}
+.contact-form button
+{
+    padding: 10px 20px;
+    color: #000000;
+    background-color: #F1F1F1;
+    margin: 16px 0px ;
+    font-size: 18px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+}
+.contact-form button:hover
+{
+    background-color: #ccc;
+}
+/* End Contcat Section   */
+
+/* Start Footer Section  */
+.footer
+{
+    background-color: #F1F1F1;    
+}
+.footer-link
+{
+    text-align: center;
+    padding: 50px;
+    font-size: 16px;
+}
+.footer-link a
+{
+    color: #000000;
+  
+}
+.footer-link a:hover
+{
+    color: #4CAF50;
+}
+/* End Footer Section  */
